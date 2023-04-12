@@ -11,7 +11,9 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
     private var currentFrame: Int = 0
     
     @Published var isPlaying: Bool = false
-    @Published var distanceInfo: String = "Distance information will be displayed here"
+    @Published var distanceInfo: String = "当前脸面积占比"
+    
+    @Published var minSafeDistance: CGFloat = 0.1
 
     
     override init() {
@@ -104,7 +106,7 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
 
     private func isDistanceSafe(face: VNFaceObservation) -> Bool {
         // Set a minimum safe distance in pixels (adjust this value as needed)
-        let minSafeDistance: CGFloat = 0.1
+        //let minSafeDistance: CGFloat = 0.1
 
             // Calculate the face width and height
             let faceWidth = face.boundingBox.width
@@ -113,7 +115,7 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
             // Calculate the area of the face
             let distance = faceWidth * faceHeight
             DispatchQueue.main.async {
-                self.distanceInfo = String(format: "Calculated face area: %.4f", distance)
+                self.distanceInfo = String(format: "当前脸面积占比: %.4f", distance)
             }
 
             // Compare the calculated face area with the minimum safe distance
