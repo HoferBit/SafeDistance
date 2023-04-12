@@ -7,6 +7,9 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
     private var sequenceHandler = VNSequenceRequestHandler()
     var audioPlayer: AVAudioPlayer?
     
+    private var frameInterval: Int = 50
+    private var currentFrame: Int = 0
+    
     @Published var isPlaying: Bool = false
     @Published var distanceInfo: String = "Distance information will be displayed here"
 
@@ -53,6 +56,14 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        // Only perform detection and distance calculation at the specified frame interval
+            if currentFrame == frameInterval {
+                currentFrame = 0
+            } else {
+                currentFrame += 1
+                return
+            }
+        
         // Convert the sample buffer to a pixel buffer
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
@@ -93,7 +104,7 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
 
     private func isDistanceSafe(face: VNFaceObservation) -> Bool {
         // Set a minimum safe distance in pixels (adjust this value as needed)
-        let minSafeDistance: CGFloat = 0.3
+        let minSafeDistance: CGFloat = 0.20
 
         // Calculate the distance between the eyes and mouth
         guard let leftEye = face.landmarks?.leftEye,
