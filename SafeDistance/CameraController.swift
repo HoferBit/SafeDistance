@@ -104,7 +104,7 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
 
     private func isDistanceSafe(face: VNFaceObservation) -> Bool {
         // Set a minimum safe distance in pixels (adjust this value as needed)
-        let minSafeDistance: CGFloat = 0.23
+        let minSafeDistance: CGFloat = 0.25
 
         // Calculate the distance between the eyes and mouth
         guard let leftEye = face.landmarks?.leftEye,
