@@ -104,33 +104,26 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
 
     private func isDistanceSafe(face: VNFaceObservation) -> Bool {
         // Set a minimum safe distance in pixels (adjust this value as needed)
-        let minSafeDistance: CGFloat = 0.25
+        let minSafeDistance: CGFloat = 0.1
 
-        // Calculate the distance between the eyes and mouth
-        guard let leftEye = face.landmarks?.leftEye,
-              let rightEye = face.landmarks?.rightEye,
-              let mouth = face.landmarks?.innerLips else {
-            return false
-        }
+            // Calculate the face width and height
+            let faceWidth = face.boundingBox.width
+            let faceHeight = face.boundingBox.height
 
-        let leftEyePosition = leftEye.normalizedPoints[0]
-        let rightEyePosition = rightEye.normalizedPoints[0]
-        let mouthPosition = mouth.normalizedPoints[0]
-
-        let eyeDistance = hypot(rightEyePosition.x - leftEyePosition.x, rightEyePosition.y - leftEyePosition.y)
-        let mouthToEyeDistance = hypot(mouthPosition.x - leftEyePosition.x, mouthPosition.y - leftEyePosition.y)
-        
-        let distance = eyeDistance * mouthToEyeDistance
+            // Calculate the area of the face
+            let distance = faceWidth * faceHeight
             DispatchQueue.main.async {
-                self.distanceInfo = String(format: "Calculated distance: %.2f", distance)
+                self.distanceInfo = String(format: "Calculated face area: %.4f", distance)
+            }
+
+            // Compare the calculated face area with the minimum safe distance
+            if distance < minSafeDistance {
+                return true
+            } else {
+                return false
             }
         
-        // Compare the calculated distance with the minimum safe distance
-                if eyeDistance * mouthToEyeDistance < minSafeDistance {
-                    return true
-                } else {
-                    return false
-                }
+    
         }
     
     func prepareAudioPlayer() {
