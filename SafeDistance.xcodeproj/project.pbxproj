@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C10F44A729E58AA600456E20 /* SafeDistanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44A629E58AA600456E20 /* SafeDistanceApp.swift */; };
+		C10F44A929E58AA600456E20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44A829E58AA600456E20 /* ContentView.swift */; };
+		C10F44AB29E58AA700456E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10F44AA29E58AA700456E20 /* Assets.xcassets */; };
+		C10F44AF29E58AA700456E20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10F44AE29E58AA700456E20 /* Preview Assets.xcassets */; };
+		C10F44B929E58AA700456E20 /* SafeDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44B829E58AA700456E20 /* SafeDistanceTests.swift */; };
+		C10F44C329E58AA700456E20 /* SafeDistanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44C229E58AA700456E20 /* SafeDistanceUITests.swift */; };
+		C10F44C529E58AA700456E20 /* SafeDistanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44C429E58AA700456E20 /* SafeDistanceUITestsLaunchTests.swift */; };
+		C10F44D229E58BEB00456E20 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10F44D129E58BEB00456E20 /* CameraController.swift */; };
+		C1B2B1E529E661990074D0D1 /* warning_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1B2B1E429E661990074D0D1 /* warning_audio.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10F44B529E58AA700456E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C10F449B29E58AA600456E20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10F44A229E58AA600456E20;
+			remoteInfo = SafeDistance;
+		};
+		C10F44BF29E58AA700456E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C10F449B29E58AA600456E20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10F44A229E58AA600456E20;
+			remoteInfo = SafeDistance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C10F44A329E58AA600456E20 /* SafeDistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeDistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10F44A629E58AA600456E20 /* SafeDistanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDistanceApp.swift; sourceTree = "<group>"; };
+		C10F44A829E58AA600456E20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C10F44AA29E58AA700456E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C10F44AC29E58AA700456E20 /* SafeDistance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeDistance.entitlements; sourceTree = "<group>"; };
+		C10F44AE29E58AA700456E20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C10F44B429E58AA700456E20 /* SafeDistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeDistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10F44B829E58AA700456E20 /* SafeDistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDistanceTests.swift; sourceTree = "<group>"; };
+		C10F44BE29E58AA700456E20 /* SafeDistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeDistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10F44C229E58AA700456E20 /* SafeDistanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDistanceUITests.swift; sourceTree = "<group>"; };
+		C10F44C429E58AA700456E20 /* SafeDistanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDistanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C10F44D129E58BEB00456E20 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		C1B2B1E429E661990074D0D1 /* warning_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warning_audio.mp3; sourceTree = "<group>"; };
+		C1B2B1E629E675A80074D0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10F44A029E58AA600456E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44B129E58AA700456E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44BB29E58AA700456E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C10F449A29E58AA600456E20 = {
+			isa = PBXGroup;
+			children = (
+				C10F44A529E58AA600456E20 /* SafeDistance */,
+				C10F44B729E58AA700456E20 /* SafeDistanceTests */,
+				C10F44C129E58AA700456E20 /* SafeDistanceUITests */,
+				C10F44A429E58AA600456E20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C10F44A429E58AA600456E20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10F44A329E58AA600456E20 /* SafeDistance.app */,
+				C10F44B429E58AA700456E20 /* SafeDistanceTests.xctest */,
+				C10F44BE29E58AA700456E20 /* SafeDistanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C10F44A529E58AA600456E20 /* SafeDistance */ = {
+			isa = PBXGroup;
+			children = (
+				C1B2B1E629E675A80074D0D1 /* Info.plist */,
+				C1B2B1E329E661350074D0D1 /* Resources */,
+				C10F44D129E58BEB00456E20 /* CameraController.swift */,
+				C10F44A629E58AA600456E20 /* SafeDistanceApp.swift */,
+				C10F44A829E58AA600456E20 /* ContentView.swift */,
+				C10F44AA29E58AA700456E20 /* Assets.xcassets */,
+				C10F44AC29E58AA700456E20 /* SafeDistance.entitlements */,
+				C10F44AD29E58AA700456E20 /* Preview Content */,
+			);
+			path = SafeDistance;
+			sourceTree = "<group>";
+		};
+		C10F44AD29E58AA700456E20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C10F44AE29E58AA700456E20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C10F44B729E58AA700456E20 /* SafeDistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C10F44B829E58AA700456E20 /* SafeDistanceTests.swift */,
+			);
+			path = SafeDistanceTests;
+			sourceTree = "<group>";
+		};
+		C10F44C129E58AA700456E20 /* SafeDistanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C10F44C229E58AA700456E20 /* SafeDistanceUITests.swift */,
+				C10F44C429E58AA700456E20 /* SafeDistanceUITestsLaunchTests.swift */,
+			);
+			path = SafeDistanceUITests;
+			sourceTree = "<group>";
+		};
+		C1B2B1E329E661350074D0D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1B2B1E429E661990074D0D1 /* warning_audio.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C10F44A229E58AA600456E20 /* SafeDistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10F44C829E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistance" */;
+			buildPhases = (
+				C10F449F29E58AA600456E20 /* Sources */,
+				C10F44A029E58AA600456E20 /* Frameworks */,
+				C10F44A129E58AA600456E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafeDistance;
+			productName = SafeDistance;
+			productReference = C10F44A329E58AA600456E20 /* SafeDistance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C10F44B329E58AA700456E20 /* SafeDistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10F44CB29E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistanceTests" */;
+			buildPhases = (
+				C10F44B029E58AA700456E20 /* Sources */,
+				C10F44B129E58AA700456E20 /* Frameworks */,
+				C10F44B229E58AA700456E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10F44B629E58AA700456E20 /* PBXTargetDependency */,
+			);
+			name = SafeDistanceTests;
+			productName = SafeDistanceTests;
+			productReference = C10F44B429E58AA700456E20 /* SafeDistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C10F44BD29E58AA700456E20 /* SafeDistanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10F44CE29E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistanceUITests" */;
+			buildPhases = (
+				C10F44BA29E58AA700456E20 /* Sources */,
+				C10F44BB29E58AA700456E20 /* Frameworks */,
+				C10F44BC29E58AA700456E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10F44C029E58AA700456E20 /* PBXTargetDependency */,
+			);
+			name = SafeDistanceUITests;
+			productName = SafeDistanceUITests;
+			productReference = C10F44BE29E58AA700456E20 /* SafeDistanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C10F449B29E58AA600456E20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C10F44A229E58AA600456E20 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C10F44B329E58AA700456E20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C10F44A229E58AA600456E20;
+					};
+					C10F44BD29E58AA700456E20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C10F44A229E58AA600456E20;
+					};
+				};
+			};
+			buildConfigurationList = C10F449E29E58AA600456E20 /* Build configuration list for PBXProject "SafeDistance" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C10F449A29E58AA600456E20;
+			productRefGroup = C10F44A429E58AA600456E20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C10F44A229E58AA600456E20 /* SafeDistance */,
+				C10F44B329E58AA700456E20 /* SafeDistanceTests */,
+				C10F44BD29E58AA700456E20 /* SafeDistanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10F44A129E58AA600456E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10F44AF29E58AA700456E20 /* Preview Assets.xcassets in Resources */,
+				C1B2B1E529E661990074D0D1 /* warning_audio.mp3 in Resources */,
+				C10F44AB29E58AA700456E20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44B229E58AA700456E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44BC29E58AA700456E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10F449F29E58AA600456E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10F44D229E58BEB00456E20 /* CameraController.swift in Sources */,
+				C10F44A929E58AA600456E20 /* ContentView.swift in Sources */,
+				C10F44A729E58AA600456E20 /* SafeDistanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44B029E58AA700456E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10F44B929E58AA700456E20 /* SafeDistanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10F44BA29E58AA700456E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10F44C529E58AA700456E20 /* SafeDistanceUITestsLaunchTests.swift in Sources */,
+				C10F44C329E58AA700456E20 /* SafeDistanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C10F44B629E58AA700456E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10F44A229E58AA600456E20 /* SafeDistance */;
+			targetProxy = C10F44B529E58AA700456E20 /* PBXContainerItemProxy */;
+		};
+		C10F44C029E58AA700456E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10F44A229E58AA600456E20 /* SafeDistance */;
+			targetProxy = C10F44BF29E58AA700456E20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C10F44C629E58AA700456E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C10F44C729E58AA700456E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C10F44C929E58AA700456E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafeDistance/SafeDistance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeDistance/Preview Content\"";
+				DEVELOPMENT_TEAM = JAABPC2C6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeDistance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SafeDistance需要访问您的摄像头来检测您与设备的距离。";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C10F44CA29E58AA700456E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SafeDistance/SafeDistance.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeDistance/Preview Content\"";
+				DEVELOPMENT_TEAM = JAABPC2C6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafeDistance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SafeDistance需要访问您的摄像头来检测您与设备的距离。";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C10F44CC29E58AA700456E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeDistance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeDistance";
+			};
+			name = Debug;
+		};
+		C10F44CD29E58AA700456E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeDistance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeDistance";
+			};
+			name = Release;
+		};
+		C10F44CF29E58AA700456E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeDistance;
+			};
+			name = Debug;
+		};
+		C10F44D029E58AA700456E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.delia.SafeDistanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeDistance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10F449E29E58AA600456E20 /* Build configuration list for PBXProject "SafeDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10F44C629E58AA700456E20 /* Debug */,
+				C10F44C729E58AA700456E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10F44C829E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10F44C929E58AA700456E20 /* Debug */,
+				C10F44CA29E58AA700456E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10F44CB29E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10F44CC29E58AA700456E20 /* Debug */,
+				C10F44CD29E58AA700456E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10F44CE29E58AA700456E20 /* Build configuration list for PBXNativeTarget "SafeDistanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10F44CF29E58AA700456E20 /* Debug */,
+				C10F44D029E58AA700456E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C10F449B29E58AA600456E20 /* Project object */;
+}
