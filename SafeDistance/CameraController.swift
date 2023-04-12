@@ -7,7 +7,7 @@ class CameraController: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, 
     private var sequenceHandler = VNSequenceRequestHandler()
     var audioPlayer: AVAudioPlayer?
     
-    private var frameInterval: Int = 50
+    private var frameInterval: Int = 30
     private var currentFrame: Int = 0
     
     @Published var isPlaying: Bool = false
